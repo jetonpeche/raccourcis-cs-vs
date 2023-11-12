@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Bdd context MySql</Title>
+            <Author>jetonpeche</Author>
+            <Description>Ajouter le DbContext MySql</Description>
+            <Shortcut>cnxMySql</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                builder.Services.AddDbContext<$TypeContext$>(x =>
+                    {
+                        try
+                        {
+                            x.UseMySql(config.GetConnectionString("defaut"), ServerVersion.AutoDetect(config.GetConnectionString("defaut")));
+                        }
+                        catch
+                        {
+                            Results.Problem(detail: "", statusCode: 503);
+                        }    
+                    });                    
+                ]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>TypeContext</ID>
+                    <Default>Context</Default>
+                    <ToolTip>Classe du context</ToolTip>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
