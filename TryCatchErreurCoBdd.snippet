@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Try catch Erreur connexion bdd</Title>
+            <Author>jetonpeche</Author>
+            <Description>Try catch routes API</Description>
+            <Shortcut>tryBdd</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                try
+                {
+                    return Results.OK();
+                }
+                catch
+                {
+                    return Results.Extensions.ErreurConnexionBdd();
+                }
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
