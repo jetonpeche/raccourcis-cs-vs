@@ -20,3 +20,10 @@
 
 - **DELETE**: apid
 - **DELETE JWT**: apidjwt
+
+## Prop
+
+- **int**: propi
+- **int required**: propir
+- **string required**: propsr
+- **string not null**: propsnn
