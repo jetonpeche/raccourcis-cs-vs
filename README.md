@@ -1,6 +1,7 @@
 # raccourcis API
 
 - **MapGroup("/???")**: mapg
+- **tryCatch erreur co Bdd**: trybdd
 
 ## Bdd context
 
