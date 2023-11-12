@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>MapPost API JWT</Title>
+            <Author>jetonpeche</Author>
+            <Description>Créer une route POST JWT</Description>
+            <Shortcut>apipjwt</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[builder.MapPost("$NomRoute$", $NomFunction$)
+                .Produces<$TypeRetour$>()
+                .ProducesValidationProblem()
+                .ProducesProblem((int)HttpStatusCode.NotFound)
+                .ProducesProblem((int)HttpStatusCode.ServiceUnavailable)
+                .RequireAuthorization();]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>NomRoute</ID>
+                    <Default>Route</Default>
+                    <ToolTip>Nom de la route</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>NomFunction</ID>
+                    <Default>NomFonction</Default>
+                </Literal>
+
+                <Literal>
+                    <ID>TypeRetour</ID>
+                    <Default>typeRetour</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
