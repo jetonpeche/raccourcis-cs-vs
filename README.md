@@ -1,5 +1,12 @@
 # raccourcis API
 
+- **MapGroup("/???")**: mapg
+
+## Bdd context
+
+- **SqlServer**: cnxsqlserv
+- **MySql**: cnxsql
+  
 ## Map 
 
 - **GET**: apig
