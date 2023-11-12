@@ -9,8 +9,20 @@
         </Header>
         <Snippet>
             <Code Language="CSharp">
-                <![CDATA[public int Nom { get; set; }]]>
+                <![CDATA[public int $NomValeur$ { get; $Setter$; }]]>
             </Code>
+            <Declarations>
+                <Literal>
+                    <ID>NomValeur</ID>
+                    <Default>Nom</Default>
+                    <ToolTip>Nom de la propriété</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>Setter</ID>
+                    <Default>set</Default>
+                </Literal>
+            </Declarations>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>
