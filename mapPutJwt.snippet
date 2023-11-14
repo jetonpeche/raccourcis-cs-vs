@@ -12,8 +12,8 @@
                 <![CDATA[builder.MapPut("$NomRoute$", $NomFunction$)
                 .Produces<$TypeRetour$>()
                 .ProducesValidationProblem()
-                .ProducesProblem((int)HttpStatusCode.NotFound)
-                .ProducesProblem((int)HttpStatusCode.ServiceUnavailable)
+                .ProducesProblem(StatusCodes.Status404NotFound)
+                .ProducesProblem(StatusCodes.Status503ServiceUnavailable)
                 .RequireAuthorization();]]>
             </Code>
             <Declarations>

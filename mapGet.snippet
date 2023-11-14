@@ -11,7 +11,7 @@
             <Code Language="CSharp">
                 <![CDATA[builder.MapGet("$NomRoute$", $NomFunction$)
                 .Produces<$TypeRetour$>()
-                .ProducesProblem((int)HttpStatusCode.ServiceUnavailable);]]>
+                .ProducesProblem(StatusCodes.Status503ServiceUnavailable);]]>
             </Code>
             <Declarations>
                 <Literal>
