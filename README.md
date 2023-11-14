@@ -2,6 +2,7 @@
 
 - **MapGroup("/???")**: mapg
 - **tryCatch erreur co Bdd**: trybdd
+- **Class X: JsonSerializerContext**: classc
 
 ## Bdd context
 
