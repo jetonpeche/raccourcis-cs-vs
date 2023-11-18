@@ -2,14 +2,14 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>Map groupe API</Title>
+            <Title>Result OK</Title>
             <Author>jetonpeche</Author>
-            <Description>Créer un map groupe</Description>
+            <Description>Result OK sans réfléxion</Description>
             <Shortcut>okc</Shortcut>
         </Header>
         <Snippet>
             <Code Language="CSharp">
-                <![CDATA[return TypedResults.Json($retour$, $NomClassContext$.Default, statusCode: 200);]]>
+                <![CDATA[return Results.Extensions.OK($retour$, $NomClassContext$.Default);]]>
             </Code>
             <Declarations>
                 <Literal>
